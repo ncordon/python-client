@@ -55,7 +55,7 @@ class BblfshClient:
 
     def parse(self, filename: str, language: Optional[str]=None,
               contents: Optional[str]=None, mode: Optional[ModeType]=None,
-              timeout: Optional[int]=None) -> ResultContext:
+              timeout: int=60) -> ResultContext:
         """
         Queries the Babelfish server and receives the UAST response for the specified
         file.
